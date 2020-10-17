@@ -2,14 +2,21 @@
 let allList = document.getElementById('categories');
 
 let listItemArr = [...allList.children];
-console.log(`В списке: ${allList.children.length} категории`);
+console.log(
+  '%cTASK-01',
+  'color: white; background-color: tomato; font-weight: bold; padding: 5px;',
+);
+console.log(
+  `%cВ списке: ${allList.children.length} категории`,
+  'font-size: 14px',
+);
 
 // Для каждого элемента li.item в списке ul#categories, найдет и выведет в консоль текст заголовка элемента (тега h2) и количество элементов в категории (всех вложенных в него элементов li).
 
 listItemArr.forEach(listItem => {
-  console.log(`Категория: ${listItem.firstElementChild.innerText}`);
   console.log(
-    `Количество элементов: ${listItem.lastElementChild.children.length}`,
+    `%cКатегория: ${listItem.firstElementChild.innerText}\nКоличество элементов: ${listItem.lastElementChild.children.length}`,
+    'font-size: 14px',
   );
 });
 

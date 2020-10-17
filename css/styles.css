@@ -1,3 +1,5 @@
+/* TASK 3 */
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -6,4 +8,23 @@
 .gallery-list-item {
   margin: 15px;
   height: 300px;
+}
+
+/* TASK 6 */
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+/* TASK 8 */
+.beauty-box {
+  border: 1px solid;
+  margin: 10px;
 }

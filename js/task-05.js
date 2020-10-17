@@ -3,8 +3,8 @@
 
 const input = document.querySelector('#name-input');
 const output = document.querySelector('#name-output');
-input.addEventListener('change', newText =>
-  newText == ''
+input.addEventListener('change', newText => {
+  input.value === ''
     ? (output.textContent = 'незнакомец')
-    : (output.textContent = newText.target.value),
-);
+    : (output.textContent = newText.target.value);
+});

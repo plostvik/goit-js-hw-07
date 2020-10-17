@@ -36,8 +36,6 @@ images.forEach((image, i) => {
   gallery.children[i].firstChild.classList.add('gallery-list-item');
 });
 
-// const list = document.querySelector('#list');
-
 // list.insertAdjacentHTML('beforebegin', '<h2>beforebegin заголовок</h2>');
 // list.insertAdjacentHTML('afterbegin', '<li>afterbegin item</li>');
 // list.insertAdjacentHTML('beforeend', '<li>beforeend item</li>');

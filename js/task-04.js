@@ -5,8 +5,8 @@
 // Добавь слушатели кликов на кнопки, вызовы функций и обновление интерфейса
 
 let value = 0;
-const decrementBtn = document.querySelector('button[data-action="decrement"]');
-const incrementBtn = document.querySelector('button[data-action="increment"]');
+const decrementBtn = document.querySelector('[data-action="decrement"]');
+const incrementBtn = document.querySelector('[data-action="increment"]');
 const valueText = document.querySelector('#value');
 
 decrementBtn.addEventListener('click', () => {
