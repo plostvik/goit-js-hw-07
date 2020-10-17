@@ -14,9 +14,9 @@ const boxes = document.querySelector('#boxes');
 const render = document.querySelector('[data-action="render"]');
 const destroy = document.querySelector('[data-action="destroy"]');
 const controls = document.querySelector('#controls');
+let size = 20;
 
 const createBoxes = function (amount) {
-  let size = 20;
   amount = controls.querySelector('input').value;
   amount > 50 ? alert('Да ты - псих!') : '';
   for (let i = 0; i < amount; i++) {
@@ -30,12 +30,14 @@ const createBoxes = function (amount) {
     div.style.height = `${size}px`;
     div.style.width = `${size}px`;
     div.style.backgroundColor = `rgb(${random1}, ${random2}, ${random3})`;
-    console.log(div.style);
   }
+  return size;
 };
 
 const destroyBoxes = function () {
   boxes.innerHTML = '';
+  size = 20;
+  return size;
 };
 
 controls.addEventListener('click', e => {
