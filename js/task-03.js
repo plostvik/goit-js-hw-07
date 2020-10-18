@@ -31,9 +31,9 @@ gallery.classList.add('gallery');
 images.forEach((image, i) => {
   gallery.insertAdjacentHTML(
     'beforeend',
-    `<li><img src="${image.url}" alt="${image.alt}"></li>`,
+    `<li><img src="${image.url}" alt="${image.alt}" class="gallery-list-item"></li>`,
   );
-  gallery.children[i].firstChild.classList.add('gallery-list-item');
+  gallery.children[i].classList.add('gallery-list');
 });
 
 // list.insertAdjacentHTML('beforebegin', '<h2>beforebegin заголовок</h2>');

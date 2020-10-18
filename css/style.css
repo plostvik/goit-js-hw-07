@@ -2,11 +2,15 @@
 
 .gallery {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-list {
+  list-style: none;
 }
 
 .gallery-list-item {
-  margin: 15px;
+  margin: 0 15px;
   height: 300px;
 }
 
